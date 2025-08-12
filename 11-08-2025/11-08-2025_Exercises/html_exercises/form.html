@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+    <label for="Roll">Roll Number:</label>
+    <input type="text" id="Roll" name="Roll" required><br><br>
+
+    <label>Student Name: First Name - Last Name</label>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br><br>
+
+    <label for="fatherName">Father's Name:</label>
+    <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+    <label for="dateOfBirth">Date of Birth:</label>
+    <input type="date" id="dateOfBirth" name="dateOfBirth" required><br><br>
+
+    <label for="mobileNumber">Mobile Number:</label>
+    <input type="tel" id="mobileNumber" name="mobileNumber" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label><br><br>
+
+    <label>Department:</label>
+    <input type="radio" id="CSE" name="department" value="CSE" required>
+    <label for="CSE">CSE</label>
+    <input type="radio" id="ECE" name="department" value="ECE" required>
+    <label for="ECE">ECE</label>
+    <input type="radio" id="ME" name="department" value="ME" required>
+    <label for="ME">ME</label>
+    <input type="radio" id="CE" name="department" value="CE" required>
+    <label for="CE">CE</label><br><br>
+
+    <label for="Course">Course:</label>
+    <select name="Course" id="Course" required>
+      <option value="">--Select Course--</option>
+      <option value="B.Tech">B.Tech</option>
+      <option value="M.Tech">M.Tech</option>
+      <option value="PhD">PhD</option>
+    </select><br><br>
+
+    <label for="StudentPhoto">Student Photo:</label>
+    <input type="file" id="StudentPhoto" name="StudentPhoto" accept="image/*" required><br><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required><br><br>
+
+    <label for="Address">Address:</label>
+    <textarea id="Address" name="Address" rows="4" cols="50" required></textarea><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
