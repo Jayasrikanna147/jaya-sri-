@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple E‑Commerce Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">MyShop</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Shop</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+      </nav>
+      <button id="cart-button" class="cart-btn" aria-label="Open cart">
+        Cart <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Quality products, fair prices</h2>
+        <p>Browse our curated collection. Add to cart and checkout quickly.</p>
+      </div>
+    </section>
+
+    <section class="shop-section" aria-label="Products">
+      <h3 class="section-title">Products</h3>
+      <div id="product-grid" class="product-grid" role="list"></div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer -->
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items" role="list"></div>
+    <div class="cart-footer">
+      <div class="cart-totals">
+        <div>Subtotal:</div>
+        <div id="cart-subtotal">₹0.00</div>
+      </div>
+      <button id="checkout-btn" class="primary-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Modal: Product Quick View -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <div class="modal-body">
+        <img id="modal-image" src="" alt="" class="modal-image" />
+        <div class="modal-info">
+          <h4 id="modal-title"></h4>
+          <p id="modal-desc"></p>
+          <div class="modal-price" id="modal-price"></div>
+          <div class="modal-actions">
+            <label>
+              Qty:
+              <input id="modal-qty" type="number" min="1" value="1" />
+            </label>
+            <button id="modal-add" class="primary-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MyShop — Demo store</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
