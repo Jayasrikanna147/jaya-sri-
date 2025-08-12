@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selector Specificity</title>
+  <style>
+    /* Universal Selector */
+    * {
+      color: gray;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Group Selector */
+    h1, p {
+      color: blue;
+      background-color: lightyellow;
+    }
+
+    /* Class Selector */
+    .highlight {
+      color: green;
+      background-color: lightgreen;
+    }
+
+    /* ID Selector */
+    #special {
+      color: red;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>This is a heading</h1>
+
+  <p>This is a normal paragraph.</p>
+
+  <p class="highlight">This is a highlighted paragraph (class).</p>
+
+  <p id="special">This is a special paragraph (id).</p>
+
+  <p class="highlight" id="special">This paragraph has both class and ID.</p>
+
+</body>
+</html>
