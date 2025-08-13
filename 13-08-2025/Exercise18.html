@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 17 - Quiz App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+    .quiz-container {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    button {
+      padding: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      border: none;
+    }
+    .option-btn {
+      background-color: #f0f0f0;
+    }
+    .option-btn:hover {
+      background-color: #ddd;
+    }
+    #feedback {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    #nextBtn {
+      margin-top: 15px;
+      background-color: #4CAF50;
+      color: white;
+    }
+    #nextBtn:hover {
+      background-color: #45a049;
+    }
+    #score {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h2 id="question">Question text</h2>
+    <div class="options" id="options"></div>
+    <div id="feedback"></div>
+    <button id="nextBtn">Next Question</button>
+    <div id="score"></div>
+  </div>
+
+  <script src="Exercise18.js"></script>
+</body>
+</html>

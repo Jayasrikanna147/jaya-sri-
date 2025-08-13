@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 19 - Image Gallary</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+    img { width: 400px; height: auto; border: 2px solid #ccc; border-radius: 8px; }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+    }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+
+  <h2>Simple Image Gallary</h2>
+  <img id="gallaryImage" src="" alt="Gallary Image">
+  <br>
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+
+  <!-- Script loaded at the end so DOM is ready -->
+  <script src="Exercise19.js"></script>
+</body>
+</html>
