@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Account App</title>
+</head>
+<body>
+
+  <h2>Bank Account Simulator</h2>
+
+  <p><strong>Account Number:</strong> <span id="accountNumber"></span></p>
+  <p><strong>Current Balance:</strong> $<span id="balance"></span></p>
+
+  <h3>Actions</h3>
+  <label>Deposit Amount: <input type="number" id="depositAmount"></label>
+  <button onclick="depositMoney()">Deposit</button><br><br>
+
+  <label>Withdraw Amount: <input type="number" id="withdrawAmount"></label>
+  <button onclick="withdrawMoney()">Withdraw</button>
+
+  <p id="message"></p>
+  <script src="bank.js"></script>
+
+</body>
+</html>
